@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: 데이터시각화관리
+  labels:
+    app: 데이터시각화관리
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: 데이터시각화관리
